@@ -22,3 +22,4 @@ jobs:
           ls
           ls ..
           pwsh -wd . build.ps1
+          msbuild ./PowerEditor/visual.net/notepadPlus.sln -p:Configuration=Release
