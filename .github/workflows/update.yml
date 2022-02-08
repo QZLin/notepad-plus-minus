@@ -18,8 +18,10 @@ jobs:
         uses: microsoft/setup-msbuild@v1.1
 
       - name: Build
+        shell: powershell
         run: |
           ls
           ls ..
-          pwsh -wd . build.ps1
+          ls ./PowerEditor/visual.net
+          cat ./PowerEditor/visual.net/notepadPlus.sln
           msbuild ./PowerEditor/visual.net/notepadPlus.sln -p:Configuration=Release
