@@ -19,4 +19,6 @@ jobs:
 
       - name: Build
         run: |
+          ls
+          ls ..
           &./build.ps1
