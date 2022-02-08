@@ -6,5 +6,5 @@ Push-Location $PSScriptRoot
 # SourceCmd($VSVCVAR_BAT)
 
 # msbuild .\notepadPlus.sln -t:Clean
-msbuild PowerEditor\visual.net\notepadPlus.sln -p:Configuration=Release
+msbuild ./PowerEditor/visual.net/notepadPlus.sln -p:Configuration=Release
 Pop-Location
